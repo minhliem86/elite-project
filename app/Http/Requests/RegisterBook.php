@@ -22,7 +22,11 @@ class RegisterBook extends Request {
 	public function rules()
 	{
 		return [
-			'email'=> 'required|email|unique:connection'
+			'email'=> 'required|email',
+			'fullname' => 'required',
+			'phone' =>'required|digits_between:7,11',
+			'id_city'=> 'required',
+			'id_center'=> 'required',
 		];
 	}
 

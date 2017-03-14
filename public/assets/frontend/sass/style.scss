@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=vietnamese');
 
 @mixin fonttitle {
-  font-family: 'Cuprum', sans-serif;
+  // font-family: 'Cuprum', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700
 }
 @mixin fontbase {
   font-family: 'Open Sans', sans-serif;
@@ -42,10 +44,25 @@ a:hover{
 }
 
 .bg{
+  background:#f1f1f1;
   .page{
     /* HEADER*/
     .header{
       margin-bottom:0.5rem;
+      .inner-header{
+        .tp-banner{
+          position:relative;
+          width:100%;
+          ul{
+            list-style: none;
+          }
+          .tp-bannertimer{
+            display:none;
+            visibility: hidden;
+          }
+        }
+
+      }
     }
     /*END*/
 
@@ -64,7 +81,10 @@ a:hover{
           font-size:1.4rem;
           color:white;
           display: inline-block;
+          @include fontbase;
           font-weight: 600;
+          padding:5px;
+
         }
         button.navbar-toggle{
           margin:0;
@@ -91,7 +111,7 @@ a:hover{
           li{
             float:left;
             width:calc(100%/4);
-            padding:1rem 2rem;
+            padding:0.6rem 2rem;
             background:$xanh;
             border-right:1px solid white;
             @include transition(all 0.3s);
@@ -105,7 +125,7 @@ a:hover{
               display:block;
               text-align: center;
               text-transform: uppercase;
-              font-size:2rem;
+              font-size:1.7rem;
               color:white;
               @include fontbase;
               @include transition(color 0.3s);
@@ -137,7 +157,7 @@ a:hover{
     /*SECTION*/
     .section{
       h2.title-section{
-        font-size:4rem;
+        font-size:3.5rem;
         line-height:4.5rem;
         margin-bottom:2rem;
         color:$xanh;
@@ -145,8 +165,12 @@ a:hover{
         @include fonttitle;
         font-weight: 700;
         @include media(320px,480px){
-          font-size:2.5rem;
+          font-size:1.8rem;
           line-height: 3rem;
+          // padding:0 0.7rem;
+          span{
+            display: block;
+          }
         };
         @include media(481px, 768px){
           font-size:3rem;
@@ -203,34 +227,58 @@ a:hover{
     .section01{
       .inner-section{
         padding:4rem 15rem;
+        background:white;
         @include media(320px, 480px){
-          padding:2rem 4rem;
+          padding:2rem 1.5rem;
         }
         @include media(481px, 768px){
-          padding:3rem 6rem;
+          padding:3rem 5rem;
         }
       }
       p.desc-section{
         margin-bottom:2rem;
+        @include media(320px, 480px){
+          text-align: justify;
+        }
+      }
+      .wrap-video{
+        video{
+          width: 100%;
+        }
       }
     }
     /*END*/
 
     /*SECTION 02*/
     .section02{
+      .inner-section{
+        background:white;
+      }
       img.img-banner-apdung{
         margin-bottom:3rem;
       }
       .wrap-content-section02{
         padding:0 15rem 4rem;
         @include media(320px, 480px){
-          padding:0 4rem 2rem;
+          padding:0 3rem 2rem;
         }
         @include media(481px, 768px){
           padding:0 6rem 3rem;
         }
         p.desc-section{
-          margin-bottom:3rem;
+          margin-bottom:1.5rem;
+          @include media(320px, 480px){
+            text-align: justify;
+          }
+        }
+        ul.list-skill{
+          padding-left:30px;
+          li{
+            @include fontbase;
+            font-size:1.4rem;
+            margin-bottom:1rem;
+            color:$xanh
+          }
         }
         img.img-map{
           margin:0 auto 2rem;
@@ -244,6 +292,9 @@ a:hover{
       .inner-section{
         padding:4rem;
         background:$xanh;
+        @include media(320px, 480px){
+          padding:1.5rem;
+        }
       }
       .wrap-top-content{
         padding:0 0 2rem;
@@ -258,7 +309,7 @@ a:hover{
           font-weight: 600;
         }
         h3.title-John{
-          font-size:4rem;
+          font-size:3.5rem;
           line-height:4.5rem;
           margin-bottom:2rem;
           color:white;
@@ -266,7 +317,7 @@ a:hover{
           font-weight: 700;
           color:white;
           @include media(320px, 480px){
-            font-size:2.5rem;
+            font-size:1.8rem;
             line-height: 3rem;
           }
           @include media(481px, 768px){
@@ -331,8 +382,9 @@ a:hover{
               }
             }
             h4.title-bottom{
-              font-size:2rem;
+              font-size:1.8rem;
               @include fontbase;
+              font-weight:600;
               line-height:2.8rem;
               margin-bottom:2.5rem;
             }
@@ -362,8 +414,9 @@ a:hover{
             float:none;
           }
           h4.title-bottom{
-            font-size:2rem;
+            font-size:1.8rem;
             @include fontbase;
+            font-weight: 600;
             line-height:2.8rem;
             margin-bottom:2.5rem;
 
@@ -396,7 +449,9 @@ a:hover{
     /*SECTION 04*/
     .section04{
       .inner-section{
-        padding:14rem 7rem 4rem;
+        // padding:14rem 7rem 4rem;
+        padding:2rem;
+        background:white;
         @include media(320px, 480px){
           padding:4rem 2rem;
         }
@@ -419,7 +474,10 @@ a:hover{
           font-weight: 600;
           text-align:center;
           padding:1.5rem 0;
-          height:60px;
+          height:90px;
+          span{
+            display:block;
+          }
 
           a{
             color:$xanh;
@@ -430,12 +488,15 @@ a:hover{
           padding:1.5rem;
           background:transparent;
           p{
-            font-size:1.2rem;
+            font-size:1.4rem;
             @include fontbase;
             margin-bottom:1.5rem;
             a{
               color:$xanh;
               @include transition(color 0.3s);
+            }
+            @include media(320px, 480px){
+              text-align: justify;
             }
           }
           a.btn-more{
@@ -474,21 +535,44 @@ a:hover{
       .inner-section{
         padding:4rem;
         background:$xanh;
+        @include media(320px, 480px){
+          padding:2.5rem;
+        }
       }
       .top-giaosu{
         margin-bottom:3rem;
         display: flex;
+        @include media(320px, 480px){
+          display: block
+        };
         .left-logo{
           padding-right:5rem;
           border-right:1px solid white;
+          @include media(320px, 480px){
+            border-right:none;
+            margin-bottom:1.5rem;
+            padding-right :0;
+            img{
+              margin:0 auto;
+              max-width: 80px;
+            }
+          };
         }
         .right-logo{
           padding-left:5rem;
+          @include media(320px, 480px){
+            padding-left :0;
+          };
           h2.title{
             color:white;
             font-size:4.5rem;
             @include fonttitle;
             line-height: 5rem;
+            @include media(320px, 480px){
+              font-size:1.8rem;
+              line-height: 3rem;
+              text-align: center;
+            };
           }
 
         }
@@ -499,13 +583,21 @@ a:hover{
         img.img-JohnVu{
           float:left;
           margin:0 4rem 0.5rem 0;
+          @include media(320px, 480px){
+            margin:0 auto 1rem;
+            float:none;
+          };
         }
         p.text{
-          font-size:1.6rem;
-          line-height: 2.8rem;
+          font-size:1.4rem;
+          line-height: 2.2rem;
           color:white;
           @include fontbase;
-          margin-bottom:3rem;
+          margin-bottom:2rem;
+          @include media(320px, 480px){
+            text-align: justify;
+
+          };
         }
         &:after{
           content:'';
@@ -513,12 +605,15 @@ a:hover{
           display:block;
           width:11px;
           height:16px;
-          bottom:-30px;;
+          bottom:-30px;
           left:50%;
           transform:translateX(-50%);
           -webkit-transform:translateX(-50%);
           -moz-transform:translateX(-50%);
           background:url('../images/icon-register.png')no-repeat;
+          animation: mykey 2.5s 0.5s infinite linear alternate;
+          -webkit-animation: mykey 2.5s 0.5s infinite linear alternate;
+          -moz-animation: mykey 2.5s 0.5s infinite linear alternate;
         }
       }
 
@@ -529,6 +624,11 @@ a:hover{
     #form{
       .inner-section{
         padding:4rem;
+        background:white;
+        @include media(320px, 480px){
+          padding:2.5rem;
+
+        };
       }
       h2.title-section{
         margin-bottom:4rem;
@@ -537,6 +637,12 @@ a:hover{
         width:50%;
         float:left;
         padding-right:2rem;
+        @include media(320px, 480px){
+          float:none;
+          width: 100%;
+          padding-right :0;
+          margin-bottom: 1.5rem;
+        };
         p.dieukien{
           font-size:1.4rem;
           @include fontbase;
@@ -546,7 +652,7 @@ a:hover{
         }
         ul.list-dieukien{
           padding-left:15px;
-          margin-bottom:3rem;
+          margin-bottom:2rem;
           li{
             font-size:1.4rem;
             @include fontbase;
@@ -558,16 +664,21 @@ a:hover{
           font-size:1.4rem;
           @include fontbase;
           color:$xanh;
-          line-height: 2.2rem
+          line-height: 2.2rem;
+          margin-bottom:2rem;
+          @include media(320px, 480px){
+            text-align: justify;
+          };
         }
         img.img-book{
           margin:0 auto 1rem;
         }
         p.imp{
-          color:$do;
+          color:$xanh;
           font-size:1.4rem;
           @include fontbase;
           font-weight:700;
+          margin-bottom:2rem;
           span{
             display:block
           }
@@ -577,6 +688,11 @@ a:hover{
         width:50%;
         float:left;
         padding-left:2rem;
+        @include media(320px, 480px){
+          float:none;
+          width: 100%;
+          padding-left :0;
+        };
         .wrap-form{
           width:90%;
           margin:0 auto;
@@ -584,6 +700,9 @@ a:hover{
           border:1px solid $border;
           border-radius: 2rem;
           box-shadow:2px 3px 10px darken($border,20%);
+          @include media(320px, 480px){
+            width:100%;
+          };
         }
         p.note{
           font-size:1.4rem;
@@ -665,7 +784,7 @@ a:hover{
           li{
             float:left;
             width:calc(100%/4);
-            padding:1rem 2rem;
+            padding:0.6rem 2rem;
             background:$xanh;
             border-right:1px solid white;
             @include transition(all 0.3s);
@@ -679,7 +798,7 @@ a:hover{
               display:block;
               text-align: center;
               text-transform: uppercase;
-              font-size:2rem;
+              font-size:1.7rem;
               color:white;
               @include fontbase;
               @include transition(color 0.3s);
@@ -706,4 +825,43 @@ a:hover{
       }
     }
   }
+}
+/*THANK YOU*/
+.thankpage{
+  padding:8rem 5rem;
+  text-align: center;
+  p.big{
+    font-size:3rem;
+    line-height: 3.5rem;
+    @include fontbase;
+    color:$xanh;
+    margin-bottom:1.5rem;
+  }
+  p.small{
+    font-size:2.2rem;
+    line-height: 3rem;
+    @include fontbase;
+    color:$xanh;
+  }
+}
+// ERROR
+span.error, #error_study_id{
+  color:$do;
+
+}
+
+@keyframes mykey{
+  0%{bottom:-30px;}
+  50%{bottom:-50px;}
+  100%{bottom:-30px;}
+}
+@-webkit-keyframes mykey{
+  0%{bottom:-30px;}
+  50%{bottom:-50px;}
+  100%{bottom:-30px;}
+}
+@-moz-keyframes mykey{
+  0%{bottom:-30px;}
+  50%{bottom:-50px;}
+  100%{bottom:-30px;}
 }

@@ -18,6 +18,7 @@
   </div>
   <script src="{!!asset('public/assets/frontend')!!}/js/jquery-1.11.2.min.js"></script>
   <script src="{!!asset('public/assets/frontend')!!}/js/bootstrap.min.js"></script>
+  <script src="{!!asset('public/assets/frontend')!!}/js/jquery.validate.min.js"></script>
   <script src="{!!asset('public/assets/frontend')!!}/js/matchHeight.js"></script>
   @yield('script')
 </body>
