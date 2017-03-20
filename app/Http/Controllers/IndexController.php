@@ -50,6 +50,10 @@ class IndexController extends Controller {
 		}
 	}
 
+	public function getHocbong(){
+		return view('pages.news-detail');
+	}
+
 	public function postTest(Request $request){
 		return "done";
 	}

@@ -25,7 +25,8 @@
 
 // DEFINE
 $do:#ea1c2d;
-$xanh:#050d9e;
+// $xanh:#050d9e;
+$xanh:#164394;
 $border:#eaeaea;
 
 *{margin:0; padding:0;}
@@ -83,7 +84,7 @@ a:hover{
           display: inline-block;
           @include fontbase;
           font-weight: 600;
-          padding:5px;
+          padding:10px 0px;
 
         }
         button.navbar-toggle{
@@ -256,6 +257,28 @@ a:hover{
       }
       img.img-banner-apdung{
         margin-bottom:3rem;
+      }
+      .wrap-img-section02{
+        position:relative;
+        a.btn-readmore{
+          position:absolute;
+          bottom:15%;
+          left:30px;
+          @include media(320px, 480px){
+            left:50%;
+            bottom:30px;
+            transform:translateX(-50%);
+            -webkit-transform:translateX(-50%);
+            -moz-transform:translateX(-50%);
+            background:$xanh;
+            &:hover{
+              color:white;
+              &:after{
+                color:white;
+              }
+            }
+          };
+        }
       }
       .wrap-content-section02{
         padding:0 15rem 4rem;
@@ -527,6 +550,88 @@ a:hover{
         }
       }
 
+    }
+    /*END*/
+
+    /*SECTION 05*/
+    .section05{
+      .inner-section{
+        background:white;
+        padding:0rem 0 5rem;
+        img{
+          margin-bottom:1.5rem;
+        }
+        h2.title-section{
+          text-transform: capitalize;
+          span{
+            display:block;
+          }
+        }
+        .wrap-content-news{
+          padding:0 12rem;
+          @include media(320px, 480px){
+            padding:0 4rem;
+          };
+          p{
+            font-size:1.4rem;
+            margin-bottom:1rem;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+          p.desc{
+            margin-bottom:2rem;
+            color:$xanh;
+          }
+          div.wrap-btn{
+            text-align:center;
+            a.btn-readmore{
+              background:$xanh;
+              border-color:transparent;
+              &:hover{
+                color:white;
+                &:after{
+                  color:white;
+                }
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+    /*END*/
+
+    /*SECTION 06*/
+    .section06{
+      .inner-section{
+        padding:4rem 12rem;
+        @include media(320px, 480px){
+          padding:0 4rem;
+        };
+      }
+      h2.title-section{
+        font-size:2rem;
+        line-height: 3rem;
+        span{
+          display: block;
+          @include media(320px, 480px){
+            display: initial;
+          };
+        }
+        @include media(320px, 480px){
+          font-size:1.8rem;
+        };
+      }
+      p.desc-section{
+        margin-bottom:1.5rem;
+      }
+      a.read{
+        font-size:1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
     }
     /*END*/
 

@@ -52,7 +52,7 @@
               <li><a class="archor" href="#hanhtrinh">ELITE GENERATION</a></li>
               <li><a class="archor" href="#johnVu">SÁCH CỦA JOHN VŨ</a></li>
               <li><a class="archor" href="#event">TIN TỨC - SỰ KIỆN </a></li>
-              <li><a href="{!!route('registerBook')!!}">LIÊN HỆ</a></li>
+              <li><a href="http://ilavietnam.edu.vn/elite-generation/dang-ky?utm_campaign=Elite+Book&utm_medium=statis&utm_source=Website">LIÊN HỆ</a></li>
             </ul>
           </div>
         </div>
@@ -83,8 +83,12 @@
       <div class="row">
         <div class="inner-section">
           <h2 class="title-section">Chuỗi Chương Trình <span>Hành Động</span></h2>
-          <img src="{!!asset('public/assets/frontend')!!}/images/banner-apdung.png" class="img-responsive img-banner-apdung hidden-sm hidden-xs" alt="Chuong trinh">
-          <img src="{!!asset('public/assets/frontend')!!}/images/banner-apdung-mobile.png" class="img-responsive img-banner-apdung visible-sm visible-xs" alt="Chuong trinh">
+          <div class="wrap-img-section02">
+            <img src="{!!asset('public/assets/frontend')!!}/images/banner-apdung.png" class="img-responsive img-banner-apdung hidden-sm hidden-xs" alt="Chuong trinh">
+            <img src="{!!asset('public/assets/frontend')!!}/images/banner-apdung-mobile.png" class="img-responsive img-banner-apdung visible-sm visible-xs" alt="Chuong trinh">
+            <a href="http://ila.edu.vn/beyondenglish" class="btn-readmore">Tìm hiểu thêm</a>
+          </div>
+
           <div class="wrap-content-section02">
             <p class="desc-section">
               Chính thức áp dụng phương pháp Tư Duy Thế Kỷ 21 trong giảng dạy tại 31 trung tâm của ILA cho chương trình Tiếng Anh Trẻ Em, Tiếng Anh Người Lớn, Tiếng Anh dành cho doanh nghiệp. Học viên trở thành trung tâm chủ động tiếp cận nguồn kiến thức, nâng cao Tiếng Anh và 6 kỹ năng mềm để thành công vượt trội trong cuộc sống:</p>
@@ -137,7 +141,6 @@
                 <div class="wrap-btn">
                   <a href="{!!route('registerBook')!!}" class="btn-readmore">Tìm hiểu thêm</a>
                 </div>
-
               </div>
             </div>
             <div class="right-bottom">
@@ -207,6 +210,25 @@
       </div>
     </div>
   </div> <!-- end event-->
+
+  <div class="section section05" id="giaithuong">
+    <div class="container">
+      <div class="row">
+        <div class="inner-section">
+          <h2 class="title-section">5 học bổng danh giá <span>mỗi học bổng trị giá 500 triệu đồng</span></h2>
+          <a href="{!!route('hocbong')!!}"><img src="{!!asset('public/assets/frontend')!!}/images/BE-news01.jpg" class="img-responsive visible-md visible-lg" alt="5 HỌC BỔNG DANH GIÁ"></a>
+          <a href="{!!route('hocbong')!!}"><img src="{!!asset('public/assets/frontend')!!}/images/Beyond_news-mobile.jpg" class="img-responsive visible-sm visible-xs" alt="5 HỌC BỔNG DANH GIÁ"></a>
+
+          <div class="wrap-content-news">
+            <p class="desc">Trung tâm anh ngữ ILA vừa công bố 5 suất học bổng trị giá 500 triệu đồng/suất dành cho học sinh ưu tú nhân lễ phát động chương trình “Kiến tạo thế hệ thanh niên ưu Việt”.</p>
+            <div class="wrap-btn">
+              <a href="{!!route('hocbong')!!}" class="btn-readmore">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   @include('layouts.footer')
 @endsection
