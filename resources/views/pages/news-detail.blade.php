@@ -92,6 +92,61 @@
         <p class="desc-section">Nhân lễ khởi động chương trình diễn ra sáng 14-3, ILA cũng đã trao tặng 10.000 ấn phẩm đặc biệt của giáo sư John Vũ “Kiến tạo thế hệ Việt Nam ưu Việt – tiếng Anh và 6 chìa khóa vàng” cho học viên. Cuốn sách có thể gọi là cẩm nang cho các bạn trẻ trên con đường hoàn thiện bản thân, nâng cao năng lực để có thể đáp ứng được yêu cầu từ phía xã hội trong thế kỷ 21. </p>
         <p class="desc-section">Nội dung trong sách được tuyển chọn từ các bài viết của giáo sư John Vũ trên Internet. Những bài viết này đã thu hút hàng triệu lượt xem vì tính thiết thực cao. <a href="{!!route('registerBook')!!}" class="read">Đăng ký nhận sách!</a></p>
       </div>
+      <div class="wrap-schoolPresent ">
+        <div class="wrap-top-school clearfix">
+          <div class="each-school">
+            <div class="wrap-inner-school">
+              <div class="wrap-content">
+                <h3 class="title-school">Harvard University</h3>
+                <p class="description">Bên cạnh 5 suất học bổng lớn này, hành trình “Kiến tạo thế hệ Việt Nam ưu Việt” của ILA còn có nhiều nhiều hoạt động khác. Trong đó, nổi bật là việc áp dụng phương pháp “Tư duy thế kỷ 21” trong giảng dạy. Giáo trình của ILA sẽ xây dựng để đạt được song song hai mục đích, vừa nâng cao tiếng Anh, vừa trang bị 6 kỹ năng mềm để thành công vượt trội trong cuộc sống, bao gồm: kỹ năng giao tiếp, kỹ năng hợp tác, khả năng sáng tạo, tư duy phản biện, kiến thức công nghệ, khả năng tự hoàn thiện bản thân. ILA cũng sẽ là trung tâm Anh ngữ áp dụng bài thi Cambridge vào kỳ thi cuối khóa.</p>
+              </div>
+              <img src="{!!asset('public/assets/frontend/images/slider-news/harvard.jpg')!!}" class="img-responsive" alt="Harvard">
+            </div>
+
+          </div>  <!-- end each school -->
+          <div class="each-school">
+            <div class="wrap-inner-school">
+              <div class="wrap-content">
+                <h3 class="title-school">Stanford University</h3>
+                <p class="description">Bên cạnh 5 suất học bổng lớn này, hành trình “Kiến tạo thế hệ Việt Nam ưu Việt” của ILA còn có nhiều nhiều hoạt động khác. Trong đó, nổi bật là việc áp dụng phương pháp “Tư duy thế kỷ 21” trong giảng dạy. Giáo trình của ILA sẽ xây dựng để đạt được song song hai mục đích, vừa nâng cao tiếng Anh, vừa trang bị 6 kỹ năng mềm để thành công vượt trội trong cuộc sống, bao gồm: kỹ năng giao tiếp, kỹ năng hợp tác, khả năng sáng tạo, tư duy phản biện, kiến thức công nghệ, khả năng tự hoàn thiện bản thân. ILA cũng sẽ là trung tâm Anh ngữ áp dụng bài thi Cambridge vào kỳ thi cuối khóa.</p>
+              </div>
+              <img src="{!!asset('public/assets/frontend/images/slider-news/harvard.jpg')!!}" class="img-responsive" alt="Harvard">
+            </div>
+
+          </div>  <!-- end each school -->
+          <div class="each-school">
+            <div class="wrap-inner-school">
+              <div class="wrap-content">
+                <h3 class="title-school">Massachusetts Institute of Technology University</h3>
+                <p class="description">Bên cạnh 5 suất học bổng lớn này, hành trình “Kiến tạo thế hệ Việt Nam ưu Việt” của ILA còn có nhiều nhiều hoạt động khác. Trong đó, nổi bật là việc áp dụng phương pháp “Tư duy thế kỷ 21” trong giảng dạy. Giáo trình của ILA sẽ xây dựng để đạt được song song hai mục đích, vừa nâng cao tiếng Anh, vừa trang bị 6 kỹ năng mềm để thành công vượt trội trong cuộc sống, bao gồm: kỹ năng giao tiếp, kỹ năng hợp tác, khả năng sáng tạo, tư duy phản biện, kiến thức công nghệ, khả năng tự hoàn thiện bản thân. ILA cũng sẽ là trung tâm Anh ngữ áp dụng bài thi Cambridge vào kỳ thi cuối khóa.</p>
+              </div>
+              <img src="{!!asset('public/assets/frontend/images/slider-news/harvard.jpg')!!}" class="img-responsive" alt="Harvard">
+            </div>
+
+          </div>  <!-- end each school -->
+          <div class="each-school">
+            <div class="wrap-inner-school">
+              <div class="wrap-content">
+                <h3 class="title-school">University of California at Berkeley</h3>
+                <p class="description">Bên cạnh 5 suất học bổng lớn này, hành trình “Kiến tạo thế hệ Việt Nam ưu Việt” của ILA còn có nhiều nhiều hoạt động khác. Trong đó, nổi bật là việc áp dụng phương pháp “Tư duy thế kỷ 21” trong giảng dạy. Giáo trình của ILA sẽ xây dựng để đạt được song song hai mục đích, vừa nâng cao tiếng Anh, vừa trang bị 6 kỹ năng mềm để thành công vượt trội trong cuộc sống, bao gồm: kỹ năng giao tiếp, kỹ năng hợp tác, khả năng sáng tạo, tư duy phản biện, kiến thức công nghệ, khả năng tự hoàn thiện bản thân. ILA cũng sẽ là trung tâm Anh ngữ áp dụng bài thi Cambridge vào kỳ thi cuối khóa.</p>
+              </div>
+              <img src="{!!asset('public/assets/frontend/images/slider-news/harvard.jpg')!!}" class="img-responsive" alt="Harvard">
+            </div>
+
+          </div>  <!-- end each school -->
+          <div class="each-school">
+            <div class="wrap-inner-school">
+              <div class="wrap-content">
+                <h3 class="title-school">University of Cambridge</h3>
+                <p class="description">Bên cạnh 5 suất học bổng lớn này, hành trình “Kiến tạo thế hệ Việt Nam ưu Việt” của ILA còn có nhiều nhiều hoạt động khác. Trong đó, nổi bật là việc áp dụng phương pháp “Tư duy thế kỷ 21” trong giảng dạy. Giáo trình của ILA sẽ xây dựng để đạt được song song hai mục đích, vừa nâng cao tiếng Anh, vừa trang bị 6 kỹ năng mềm để thành công vượt trội trong cuộc sống, bao gồm: kỹ năng giao tiếp, kỹ năng hợp tác, khả năng sáng tạo, tư duy phản biện, kiến thức công nghệ, khả năng tự hoàn thiện bản thân. ILA cũng sẽ là trung tâm Anh ngữ áp dụng bài thi Cambridge vào kỳ thi cuối khóa.</p>
+              </div>
+              <img src="{!!asset('public/assets/frontend/images/slider-news/harvard.jpg')!!}" class="img-responsive" alt="Harvard">
+            </div>
+
+          </div>  <!-- end each school -->
+        </div>
+        
+      </div>  <!-- end -wrap-present -->
     </div>
   </div>
 </div>  <!-- end hanhtrinh -->

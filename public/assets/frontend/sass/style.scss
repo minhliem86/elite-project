@@ -607,6 +607,7 @@ a:hover{
     .section06{
       .inner-section{
         padding:4rem 12rem;
+        background:white;
         @include media(320px, 480px){
           padding:0 4rem;
         };
@@ -632,6 +633,74 @@ a:hover{
         text-transform: uppercase;
         font-weight: 600;
       }
+      .wrap-schoolPresent{
+        background:white;
+        padding: 0 0 3rem;
+        div.each-school{
+          width:calc(100%/3);
+          padding:0 15px;
+          float:left;
+          margin-bottom:3rem;
+          
+          div.wrap-inner-school{
+            background:white;
+            border:1px solid $xanh;
+            overflow:hidden;
+            position:relative;
+            .wrap-content{
+              padding:1rem;
+            }
+            h3.title-school{
+              font-size:2rem;
+              @include fontbase;
+              font-weight: 600;
+              color:$xanh;
+              height:65px;
+              @include transition(all 0.3s);
+            }
+            p.description{
+              font-size:1.4rem;
+              @include fontbase;
+              margin-top:1rem;
+              color:$xanh;
+              opacity: 0;
+              visibility: hidden;
+              text-align: justify;
+              transform:translateY(10%);
+              -webkit-transform:translateY(10%);
+              -moz-transform:translateY(10%);
+              @include transition(all 0.4s);
+
+            }img{
+              position:absolute;
+              height:calc(100% - 65px);
+              bottom:0;
+              @include transition(all 0.3s);
+            }
+            &:hover{
+              background:$xanh;
+              img{
+                transform:translateY(101%);
+                -webkit-transform:translateY(101%);
+                -moz-transform:translateY(101%);
+              }
+              h3.title-school{
+                color:white;
+              }
+              p.description{
+                color:white;
+                opacity: 1;
+                visibility: visible;
+                transform:translateY(0);
+                -webkit-transform:translateY(0);
+                -moz-transform:translateY(0);
+              }
+            }
+          }
+        }
+
+      }
+
     }
     /*END*/
 
